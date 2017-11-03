@@ -218,3 +218,11 @@ print("%f"%lam(11,3.14))
 print("%0.1f"%lam(11,3.14))
 print("%0.2f"%lam(11,3.14))
 print("%0.3f"%lam(11,3.14))
+
+print((lambda a : a+ 100)(5))
+
+print(~9)
+c = int("   100")
+print("%d"%c)
+c = int("   100",8)
+print("%d"%c)
