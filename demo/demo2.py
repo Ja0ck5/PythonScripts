@@ -1,3 +1,4 @@
+#coding=utf-8
 # a = 100
 # b=200
 # result = a + b
@@ -206,3 +207,14 @@ def getAge():
 getAge()
 
 print("%d"%age)
+
+# 匿名函数 anonymous function
+lam = lambda a,b : a+b 
+
+print("%d"%lam(11,33))
+
+lam1 = lambda a,b : a*b 
+print("%f"%lam(11,3.14))
+print("%0.1f"%lam(11,3.14))
+print("%0.2f"%lam(11,3.14))
+print("%0.3f"%lam(11,3.14))
