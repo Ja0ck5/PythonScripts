@@ -151,24 +151,58 @@ print("%s"%info['gender'])
 # info.clear()
 
 # print(info)
-print(info.keys())
-print(info.values())
-print(info.items())
-print(info.has_key('who'))
+# print(info.keys())
+# print(info.values())
+# print(info.items())
+# print(info.has_key('who'))
 
-for key in info.keys() : 
-	print(key)
+# for key in info.keys() : 
+# 	print(key)
 
-for value in info.values() : 
-	print(value)
+# for value in info.values() : 
+# 	print(value)
 
-for item in info.items() : 
-	print(item)	
+# for item in info.items() : 
+# 	print(item)	
+
+# for k,v in info.items() : 
+# 	print("k=%s,v=%s"%(k,v))	
 
 
+# tuple1 = ['xioaxiao','dada','zz',3.14159265358979626,100]	
+
+# tuple2 = ['xioaxiao','dada','zz',3.14159265358979626,100]	
+
+# tup3 = tuple2 + tuple1
+# for i in tup3 : 
+# 	print("%s"%i)
+
+def add(a,b):
+
+	c = a+b
+	print("%d+%d=%d"%(a,b,c))
+
+add(100,300)	
 
 
+def getNum(a,b):
+	return a -b
 
-
+print("%d"%getNum(100,200))
 	
+def getMultiple(*num):
+	for t in num:
+		print(t)
 
+getMultiple(1,5,9)
+
+age=20
+
+def getAge():
+		global age
+		age=18
+		print("%d"%age)
+
+getAge()
+
+print("%d"%age)
