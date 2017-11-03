@@ -111,9 +111,59 @@ mystr = "hello world this is a python script"
 
 # print("%s"%mystr.replace("is","si",mystr.count("is")))
 
-arr = ['xioaxiao','dada','zz']
+# names = ['xioaxiao','dada','zz']
 
-tuple1 = ['xioaxiao','dada','zz',3.14159265358979626,100]
+# tuple1 = ['xioaxiao','dada','zz',3.14159265358979626,100]
+
+# names.append("test1")
+
+# del names[2] 
+
+# names.remove("test1")
+# names.pop()
+
+# i=0
+# while i < len(names) : 
+# 	print("name[%d]=%s"%(i,names[i])) 
+# 	i+=1
+
+# for j in tuple1 :
+# 	print("j=%s"%j) 
+
+info = {"name" : "hello","addr":"American","age":20}
+
+print("%s"%info['name'])
+
+info['name'] = "world"
+
+print("%s"%info['name'])
+
+info['gender'] = 'male'
+
+print("%s"%info['gender'])
+
+# del info['gender']
+
+# print("%s"%info['gender'])
+
+# print(info)
+
+# info.clear()
+
+# print(info)
+print(info.keys())
+print(info.values())
+print(info.items())
+print(info.has_key('who'))
+
+for key in info.keys() : 
+	print(key)
+
+for value in info.values() : 
+	print(value)
+
+for item in info.items() : 
+	print(item)	
 
 
 
