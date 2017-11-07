@@ -70,9 +70,33 @@ fileName = 'D:/f.txt'
 
 # os.mkdir('D:/testMkdir')
 
-currentDir = os.getcwd()
-print(currentDir)
+# currentDir = os.getcwd()
+# print(currentDir)
 
-listDir = os.listdir(currentDir)
-for tmp in listDir:
-	print(tmp)
+# listDir = os.listdir(currentDir)
+# for tmp in listDir:
+# 	print(tmp)
+
+
+try:
+	print(num)
+# except Exception as e:
+	# raise
+	# print("this is an exception",e)
+# except NameError as ne:
+# 	print('this is a nameError',ne)
+# except IOError as ie:		
+# 	print('this is an IOError',ie)
+# except (NameError,IOError) as e :
+# 	print('this is an error',e)
+except (NameError,IOError) , result :
+	print('this is an error',result)
+else:
+	pass
+finally:
+	# pass
+	print('I am the finally')
+
+import testImport
+
+testImport.printSomething()
