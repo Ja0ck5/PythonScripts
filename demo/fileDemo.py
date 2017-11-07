@@ -100,3 +100,5 @@ finally:
 import testImport
 
 testImport.printSomething()
+
+from testImport import printSomething
