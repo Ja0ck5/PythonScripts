@@ -24,6 +24,7 @@ class Cat:
 class Bosi(Cat):
 
 	def __init__(self):
+		Cat.__init__(self)
 		print '------- child bosi ----------'
 	def __del__(self):
 		print '========= child bosi =========='	
