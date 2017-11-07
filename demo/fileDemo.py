@@ -1,4 +1,5 @@
 #coding=utf-8
+import os
 
 # f = open('D:/f.txt','w')
 # f = open('D:/f.txt','r')
@@ -22,23 +23,56 @@
 # 	content = f.read(0)
 
 # f.close()
-oldFileName = 'D:/f.txt'
-oldFile = open(oldFileName,'r')
+# oldFileName = 'D:/f.txt'
+# oldFile = open(oldFileName,'r')
 
 
-num = oldFileName.rfind('.')
+# num = oldFileName.rfind('.')
 
-left = oldFileName[0:num]
-right = oldFileName[num:]
+# left = oldFileName[0:num]
+# right = oldFileName[num:]
 
-newFile = open(left +'-copy' + right,'w')
+# newFile = open(left +'-copy' + right,'w')
 
-content = oldFile.readline()
-print(content)
-while len(content)>0 :
-	newFile.write(content)
-	content = oldFile.readline()
+# content = oldFile.readline()
+# print(content)
+# while len(content)>0 :
+# 	newFile.write(content)
+# 	content = oldFile.readline()
 
 
-oldFile.close()
-newFile.close()
+# oldFile.close()
+# newFile.close()
+
+fileName = 'D:/f.txt'
+# f = open(fileName,'r')
+
+# position = f.tell()
+
+# print "当前位置：" , position
+
+# f.seek(5,0) #var1:offset ,var2: 0: 文件开头;1:当前位置;2:文件末尾
+
+# print(f.read(5))
+# position = f.tell()
+# print "当前位置：" , position
+
+# f.close()
+
+
+# os.rename(fileName,fileName+'---rename')
+
+# movieNames = os.listdir('D:/data')
+# for movieName in movieNames:
+# 	print(movieName)
+
+# os.remove(fileName)
+
+# os.mkdir('D:/testMkdir')
+
+currentDir = os.getcwd()
+print(currentDir)
+
+listDir = os.listdir(currentDir)
+for tmp in listDir:
+	print(tmp)
